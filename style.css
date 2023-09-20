@@ -1,0 +1,438 @@
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /* cambiar tipografia del texto */
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:end;
+    padding: 10px;
+    align-items: center;
+    background-color: skyblue;
+    box-shadow: 10px;
+}
+
+div.icono-inicio {
+    display: none;
+    height: 35px;
+    color: aqua;
+}
+
+.icono-inicio img {
+    width: 25px;
+
+
+}
+.menu-inicio li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    display: block; /* Convierte el enlace en un bloque para ocupar todo el ancho */
+}
+    .menu-inicio li a {
+    color: black;
+}
+
+
+
+    .menu-inicio li:hover {
+        background-color: skyblue;
+        cursor: pointer;
+        display: block;
+    }
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+}
+
+.hola {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-hola {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 400px;
+    padding: 15px;
+}
+
+.sub-hola h2 {
+    font-size: 30px;
+
+}
+
+.sub-hola p {
+    padding: 20px;
+    text-align: justify;
+}
+
+.sub-hola img {
+    width: 250px;
+    transition: all 1s;
+    border-radius: 10px;
+    border: 2px solid skyblue;
+}
+
+.sub-hola img:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.conocimientos,
+.proyectos {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.conocimientos h2,
+.proyectos h2 {
+    padding: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.conocimientos article {
+    margin-top: 60px;
+    padding: top 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.sub-conocimiento {
+    transition: scale 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 300px;
+    padding: 15px;
+    border: 2px solid skyblue;
+    border-radius: 10% 10% 10% 10%;
+    box-shadow: 8px 7px 91px 3px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 8px 7px 91px 3px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 8px 7px 91px 3px rgba(0, 0, 0, 0.66);
+}
+
+.sub-conocimiento:hover {
+    scale: 1.2;
+    background-color: rgba(99, 227, 236, 0.66);
+    cursor: pointer;
+}
+
+.conocimientos article p {
+    width: 100px;
+    text-align: center;
+}
+
+.sub-proyecto img {
+    width: 170px;
+
+
+}
+
+
+
+.sub-proyecto {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, rgb(143, 226, 215), rgb(7, 120, 165)) border-box;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px;
+    box-shadow: 2px 5px 5px 8px skyblue;
+
+}
+.pro :hover{
+    scale: 0.9 ;
+   overflow:hidden;
+    cursor: pointer;
+}
+
+.sub-proyecto span {
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.pro {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.contacto {
+    width: 90%;
+    margin-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 5px solid rgb(132, 199, 238);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    min-width: 300px;
+}
+
+
+.contacto h2 {
+    padding: auto;
+    font-size: 25px;
+}
+
+.sub-contacto {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+.sub-contacto ul {
+    
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+
+}
+.sub-contacto  ul li a{
+   color:rgb(255, 255, 255);
+   display: inline-block;
+   margin: 10px;
+   background: skyblue;
+   line-height: 42px;
+   font-size: 28px;
+   border-radius: 50%;
+   box-shadow: 1px;
+   height: 40px;
+   width:40px;
+   text-align: center;
+}
+
+.sub-contacto ul li:hover a{
+    scale: 1.2;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.div1 ul li :hover a{
+    scale: 1.2;
+    cursor: pointer;
+    }
+
+.div2 ul li a{
+    color:rgb(97, 97, 97);
+    display: inline-block;
+    margin: 10px;
+    background: skyblue;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 1px;
+    height: 35px;
+    width:35px;
+    text-align: center;
+    padding: 5px;
+
+}
+.div2 ul li:hover a{
+    scale: 1.2;
+    background-color: rgb(73, 169, 207);
+    cursor: pointer;
+}
+footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    background-color: skyblue;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer ul li a {
+    padding: 10px;
+    text-decoration: none;
+
+}
+footer .div1 a:hover{
+color: #fdfdfd;
+background-color: #5471c2;
+border-radius: 5px;
+}
+footer p {
+    text-align: center;
+}
+
+.div1,
+.div2 {
+    height:auto;
+    }
+
+.div3 {
+    height: 20%;
+}
+.textarea{ border: 3px solid skyblue;
+}
+
+@media (max-width:760px) {
+    body {
+        min-width: 300px;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    .nav-desk,
+    .menu-inicio {
+        display: none;
+    }
+
+    div.icono-inicio {
+        display: block;
+        position: relative;
+    }
+
+    div.icono-inicio:hover .menu-inicio {
+        display: block;
+    }
+
+    .menu-inicio {
+        position: absolute;
+        top: 20px;
+        color: rgb(18, 27, 27);
+    }
+
+    .menu-inicio li {
+        display: block;
+        background: rgb(255, 255, 255);
+        text-align: center;
+        height: 50px;
+        width: 350px;
+    }
+
+    .menu-inicio li:hover {
+        background-color: skyblue;
+        cursor: pointer;
+        display: block;
+    }
+
+
+    .hola {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        ;
+    }
+
+    .conocimientos article {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sub-contacto div ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    .ul{
+    }  
+}
+ /* Estilos de etiquetas y campos de entrada */
+.columna {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border:3px solid skyblue
+}
+
+label {
+    display:inline-block;
+    font-weight: bold;
+    
+}
+
+
+textarea{
+    border: 3px solid skyblue;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+/* Estilo del botón de enviar */
+.enviar {
+    background-color: skyblue;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.enviar:hover {
+    color:#fdfdfd;;
+    scale: 1.1;
+}
+.div:hover{
+    color: #5471c2;
+    scale: 1.2;
+}
